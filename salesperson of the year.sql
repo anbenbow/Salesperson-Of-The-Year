@@ -1,6 +1,7 @@
--- SELECT * FROM employees LEFT JOIN sales ON employees.EmployeeID= sales.SalesPersonID;
--- UNION
--- SELECT * FROM sales LEFT JOIN products ON sales.ProductID=products.ProductID;
 -- CREATE VIEW employee_sales AS SELECT * FROM employees LEFT JOIN sales ON employees.EmployeeID= sales.SalesPersonID;
--- CREATE VIEW product_sales AS SELECT * FROM sales LEFT JOIN products ON sales.ProductID=products.ProductID;
-SELECT * FROM product_sales;
+-- ALTER TABLE products RENAME COLUMN ProductID TO Product_ID;
+-- CREATE VIEW all_sales AS SELECT * FROM employee_sales LEFT JOIN products ON employee_sales.ProductID=products.Product_ID;
+
+-- SELECT * FROM all_sales;
+-- INNER JOIN
+-- SELECT * FROM employee_sales;
