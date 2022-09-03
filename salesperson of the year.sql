@@ -1,7 +1,4 @@
--- CREATE VIEW employee_sales AS SELECT * FROM employees LEFT JOIN sales ON employees.EmployeeID= sales.SalesPersonID;
--- ALTER TABLE products RENAME COLUMN ProductID TO Product_ID;
--- CREATE VIEW all_sales AS SELECT * FROM employee_sales LEFT JOIN products ON employee_sales.ProductID=products.Product_ID;
 
--- SELECT * FROM all_sales;
--- INNER JOIN
--- SELECT * FROM employee_sales;
+-- SELECT name, price FROM all_sales ORDER BY price DESC LIMIT 1;
+-- SELECT firstName, LastName, COUNT(*) as total_sales_by_employee FROM all_sales GROUP BY FirstName ORDER BY COUNT(FirstName) DESC LIMIT 3;
+-- SELECT name, COUNT(*) as product_sold_most FROM all_sales GROUP BY name ORDER BY COUNT(name) DESC LIMIT 3;
